@@ -2,7 +2,7 @@ FROM openjdk:8 AS BUILD_IMAGE
 
 RUN apt update && apt install maven -y
 
-RUN git clone -b vp-docker https://github.com/imranvisualpath/vprofile-repo.git
+RUN git clone -b vp-docker https://github.com/davidshn/devops.git
 
 RUN cd vprofile-repo && mvn clean install -DskipTests
 
